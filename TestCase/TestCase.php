@@ -40,18 +40,20 @@ class TestCase
 
 		echo "<div style='font-family:Montserrat,sans-serif;margin-bottom:10px;'>";
 		echo "<br/>";
-		echo "<b>Test Name:</b> '".$this->testCaseName."'<br/>";
+		echo "<span style='font-size:20px;'><b><u>".$this->testCaseName."</u></b></span><br/>";
 		echo "<br/>";
 		echo "<b>Test Values:</b> ".$this->extraComments;
 		echo "<br/>";
 		echo "<br/>";
-		echo "<b>Test Expected Result:</b> ".$this->testCaseExpectedResult."<br/>";
-		echo "<b>Test Actual Result:</b> ".$this->equalityCheck."<br/>";
+		echo "<b>Test Expected Result:</b> ".$this->testCaseExpectedResult."";
+		echo "<img src='../TestCase/".$this->testCaseExpectedResult.".png' height='20px' width='20px' style='margin:10px 0 0 5px;position:relative;top:5px;'/><br/>";
+		echo "<b>Test Actual Result:</b> ".$this->equalityCheck."";
+		echo "<img src='../TestCase/".$this->equalityCheck.".png' height='20px' width='20px' style='margin:10px 0 0 5px;position:relative;top:5px;'/><br/><br/>";
 		echo "<b>Final Result:</b> ".$finalResult;
-		echo "<img src='{$finalResult}.png' alt='{$finalResult}' height='20px' width='20px' style='margin:10px 0 0 5px;position:relative;top:5px;'/>";
+		echo "<img src='../TestCase/{$finalResult}.png' alt='{$finalResult}' height='20px' width='20px' style='margin:10px 0 0 5px;position:relative;top:5px;'/>";
 		echo "<br/>";
 		echo "<br/>";
-		echo "<b>Test Time:</b> ".number_format($this->executionTime,10)." seconds.<br/>";
+		echo "<span style='font-size:14px'><i>This test took ".number_format($this->executionTime,10)." seconds.</i></span><br/>";
 		echo "<br/>";
 		echo "</div>";
 		echo "<hr></hr>";
