@@ -1,0 +1,26 @@
+{
+  "name": "project-dealer-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "chromedriver": "^77.0.0",
+    "selenium-webdriver": "^4.0.0-alpha.5"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.2"
+  },
+  "scripts": {
+    "test": "mocha --recursive --timeout 10000 UI-Testing/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teamprojectdealer/Project-Dealer-Testing.git"
+  },
+  "author": "teamprojectdealer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teamprojectdealer/Project-Dealer-Testing/issues"
+  },
+  "homepage": "https://github.com/teamprojectdealer/Project-Dealer-Testing#readme"
+}
