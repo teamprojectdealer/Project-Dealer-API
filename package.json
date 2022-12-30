@@ -8,7 +8,7 @@
     "selenium-webdriver": "^4.0.0-alpha.5"
   },
   "devDependencies": {
-    "mocha": "^6.2.2"
+    "mocha": "^10.2.0"
   },
   "scripts": {
     "test": "mocha --recursive --timeout 10000 UI-Testing/test.js"
